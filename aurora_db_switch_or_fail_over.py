@@ -30,7 +30,7 @@ def getCredentials():
     credential['username'] = app_db_credentials['username']
     credential['password'] = app_db_credentials['password']
     credential['host'] = app_db_credentials['host']
-    #credential['host'] = os.environ['GLOBAL_APP_DB_READER_ENDPOINT_EAST1_INVALID']
+    #credential['host'] = os.environ['GLOBAL_APP_DB_READER_ENDPOINT_EAST1']
     credential['port'] = app_db_credentials['port']
     credential['db'] = app_db_credentials['database']
     
