@@ -235,8 +235,8 @@ def lambda_handler(event, context):
         time.sleep(10)
     
     return True
-
-if __name__ == '__main__':
-   event=""
-   context=""
-   lambda_handler(event,context)
+#Following code not required if running as lambda function
+#if __name__ == '__main__':
+#   event=""
+#   context=""
+#   lambda_handler(event,context)
