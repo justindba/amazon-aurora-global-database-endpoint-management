@@ -16,7 +16,6 @@ class Functions:
         sm=boto3.client('secretsmanager')
         try:
             print('REGIONAL_'+db_id.upper()+'_DB_SECRET_ARN')
-            #smval=sm.get_secret_value(SecretId='arn:aws:secretsmanager:us-east-2:417129174532:secret:aupg-lab-cluster-useast2-b1Jk9L')
             smval=sm.get_secret_value(SecretId=os.environ['REGIONAL_'+db_id.upper()+'_DB_SECRET_ARN'])
             print(smval)
         except boto3_client_error as e:
